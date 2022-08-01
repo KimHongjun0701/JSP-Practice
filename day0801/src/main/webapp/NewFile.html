@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기 - 3</title>
+</head>
+<body>
+	<h1>계산기</h1>
+	<hr>
+	<!-- 선 긋기 -->
+	<form method="post" action="/test/CalcServlet2">
+		<!-- form의 submit을 통해 POST 방식으로 '요청' -->
+		<!-- 요청에 대한 정보는 request 객체에 저장되어있음 -->
+		<input type="text" name="num1"> <select name="op">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+		</select> <input type="text" name="num2">
+		<!-- input이나 select에 대한 값을
+		 name이라는 속성으로 찾을 수 있음  -->
+
+		<input type="submit" value="계산 결과보기">
+	</form>
+
+</body>
+</html>
